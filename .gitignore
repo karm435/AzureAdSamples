@@ -1,0 +1,25 @@
+# jetbrain folders
+.idea
+.idea/
+/node_modules
+/.pnp
+.pnp.js
+.vs
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+AzureAd.Web/ClientApp/node_modules
+AzureAd.Web/ClientApp/public
+SPA_ImplicitFlow/AzureAd.Web/ClientApp/node_modules
+SPA_ImplicitFlow/AzureAd.Web/ClientApp/.env.development
+SPA_ImplicitFlow/AzureAd.Web/appsettings.Development.json
