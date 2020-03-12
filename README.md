@@ -2,6 +2,12 @@
 My trials working with Azure Ad. Don't judge me by UI :)
 
 # Implicit Flow 
+I follow the steps mentioned in [Microsoft docs](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-v2-aspnet-core-webapp#startup-class)
+
+To know more about Implicit flow I would suggest go through these links
+* [MSDN oauth2 implicit grant flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow)
+* [Auth0 Implicit Flow](https://auth0.com/docs/flows/concepts/implicit)
+
 To run the sample you might want to do few things
 1. Create an Azure Ad tenant
 2. Register your app in the Azure Ad
