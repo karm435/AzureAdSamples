@@ -1,7 +1,13 @@
 # AzureAdSamples
 My trials working with Azure Ad. Don't judge me by UI :)
 
+This is the beginning and I am hoping to evolve it over time to make it look more professional. :)
+
 # Implicit Flow 
+In this sample I have tried to do
+1. Use Implicit flow to Authenticate the User
+2. Add Authorization using Groups in Ad. 
+
 I follow the steps mentioned in [Microsoft docs](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-v2-aspnet-core-webapp#startup-class)
 
 To know more about Implicit flow I would suggest go through these links
