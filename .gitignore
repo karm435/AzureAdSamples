@@ -1,7 +1,7 @@
 # jetbrain folders
 .idea
 .idea/
-/node_modules
+node_modules
 /.pnp
 .pnp.js
 .vs
@@ -23,3 +23,5 @@ AzureAd.Web/ClientApp/public
 SPA_ImplicitFlow/AzureAd.Web/ClientApp/node_modules
 SPA_ImplicitFlow/AzureAd.Web/ClientApp/.env.development
 SPA_ImplicitFlow/AzureAd.Web/appsettings.Development.json
+appsettings.Development.json
+.env.development
