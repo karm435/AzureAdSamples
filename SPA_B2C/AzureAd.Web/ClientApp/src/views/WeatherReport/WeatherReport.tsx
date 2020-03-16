@@ -1,4 +1,3 @@
-// @flow
 import React, {useState} from "react";
 import {WeatherApi} from "api/weatherApi";
 import {WeatherSummary} from "api/Domain/Weather/WeatherSummary";

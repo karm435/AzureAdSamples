@@ -1,0 +1,11 @@
+.navbar {
+  ul
+    {
+      list-style-type: none;
+      > li {
+        width: 100%;
+        align-items: stretch;
+
+      }
+    }
+}

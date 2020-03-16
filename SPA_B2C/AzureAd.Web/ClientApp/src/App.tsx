@@ -1,14 +1,11 @@
 import React from 'react';
 import './App.css';
-import {WeatherReport} from "./views/WeatherReport/WeatherReport";
-import {WeatherApi} from "./api/weatherApi";
+import {LandingPage} from "./views/LandingPage/LandingPage";
 
 function App() {
     return (
         <div className="App">
-            <div>
-                <WeatherReport weatherAPi={new WeatherApi()}/>
-            </div>
+            <LandingPage/>
         </div>
     );
 }
