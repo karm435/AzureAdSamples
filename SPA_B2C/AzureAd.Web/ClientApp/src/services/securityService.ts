@@ -7,29 +7,30 @@ const config : Msal.Configuration = {
         clientId: CLIENT_ID,
         authority: authority,
         redirectUri: window.location.origin,
-        postLogoutRedirectUri: window.location.origin
+        postLogoutRedirectUri: window.location.origin,
+        validateAuthority: false
     },
     cache: {
-        cacheLocation: "sessionStorage"
+        cacheLocation: "sessionStorage",
+        storeAuthStateInCookie: true
     }
 };
 
 const apiAuthParams: Msal.AuthenticationParameters = {
-    scopes: [config.auth.clientId]
+    scopes: [`openid`]
 };
 
 let userAgentApplication: UserAgentApplication;
 userAgentApplication = new UserAgentApplication(config);
 
-userAgentApplication.handleRedirectCallback((authErr: AuthError, response?: AuthResponse) => {
-    //TODO: validate the id token
-    if (authErr) {
-        console.error(authErr);
-    }
-});
-
 const signInUser = () => {
-    userAgentApplication.loginRedirect(apiAuthParams);
+    userAgentApplication.loginPopup(apiAuthParams).then((loginResponse) => {
+        console.log(loginResponse);
+    }).catch((error: AuthError) => {
+        if(error.errorCode === 'AADB2C90091'){
+            window.location.href = window.location.origin;
+        }
+    });
 };
 
 const isSignedIn = () => {
