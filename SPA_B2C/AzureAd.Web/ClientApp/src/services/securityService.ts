@@ -25,7 +25,7 @@ userAgentApplication = new UserAgentApplication(config);
 
 const signInUser = () => {
     userAgentApplication.loginPopup(apiAuthParams).then((loginResponse) => {
-        console.log(loginResponse);
+        window.location.href = window.location.origin;
     }).catch((error: AuthError) => {
         if(error.errorCode === 'AADB2C90091'){
             window.location.href = window.location.origin;
