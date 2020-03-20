@@ -22,4 +22,16 @@ To run the sample you might want to do few things
 4. After creating the groups update the appsettings.json in Web project to reflect those changes under AdConfig section. 
 5. Logout and login to the app to reflect these changes in the app.
 
+# SPA B2C
 
+If you follow the steps in the documentation you will have an Azure Ad B2c tenant and user flow to sign in and sign up a user. 
+
+
+you would need to createa a .env.developement file next to the .env file in the root folder and update following variables
+
+REACT_APP_CLIENT_ID=
+REACT_APP_TENANT_ID=
+REACT_APP_TENANT_NAME=
+REACT_APP_SUSI_FLOW_ID= 
+
+Also, I am loading the SPA from the aspnet core web app. So in my case the redirect url in the app registration is https://localhost:44321, which can be found in the launchSettings.json
